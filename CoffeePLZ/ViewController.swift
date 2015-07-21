@@ -7,19 +7,56 @@
 //
 
 import UIKit
+import Foundation
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
+
+
+
+    let manager = CLLocationManager()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.manager.delegate = self
+        self.manager.desiredAccuracy = kCLLocationAccuracyBest
+        self.manager.requestWhenInUseAuthorization()
+        self.manager.startUpdatingLocation()
+        println(manager)
+
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: { (placemarks, error) -> Void in
+            if error != nil {
+                println(error)
+                return //break of this method and return
+            }
+
+            if placemarks.count > 0{
+                let pm = placemarks[0] as! CLPlacemark
+
+                self.displayLocation(pm)
+            }
+
+        })
     }
 
 
+    func displayLocation(placemark: CLPlacemark) {
+        self.manager.stopUpdatingLocation()
+        println(placemark.location)
+        println(placemark.locality)
+        println(placemark.country)
+        println(placemark.administrativeArea)
+        println(placemark.description)
+    }
+
+
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        println(error)
+    }
 }
 
