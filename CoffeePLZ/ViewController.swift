@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import CoreLocation
+import Parse
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -20,11 +21,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.manager.delegate = self
+        doManagerShiz()
+
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            println("Object has been saved.")
+        }
+    }
+
+    func doManagerShiz(){
         self.manager.desiredAccuracy = kCLLocationAccuracyBest
         self.manager.requestWhenInUseAuthorization()
         self.manager.startUpdatingLocation()
         println(manager)
-
 
     }
 
