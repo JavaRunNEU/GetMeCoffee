@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A2144E9A1B5EF06D006ACDCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2144E991B5EF06D006ACDCF /* AppDelegate.swift */; };
-		A2144E9C1B5EF06D006ACDCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2144E9B1B5EF06D006ACDCF /* ViewController.swift */; };
+		A2144E9C1B5EF06D006ACDCF /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2144E9B1B5EF06D006ACDCF /* RootViewController.swift */; };
 		A2144E9F1B5EF06D006ACDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2144E9D1B5EF06D006ACDCF /* Main.storyboard */; };
 		A2144EA11B5EF06D006ACDCF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2144EA01B5EF06D006ACDCF /* Images.xcassets */; };
 		A2144EA41B5EF06D006ACDCF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2144EA21B5EF06D006ACDCF /* LaunchScreen.xib */; };
@@ -25,6 +25,9 @@
 		A2144ECC1B601FDC006ACDCF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECB1B601FDC006ACDCF /* SystemConfiguration.framework */; };
 		A2144ECE1B601FE6006ACDCF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECD1B601FE6006ACDCF /* libz.dylib */; };
 		A2144ED01B601FEF006ACDCF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */; };
+		A2D5D13B1B62A1DC00A4346B /* GetCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */; };
+		A2D5D13D1B62A38000A4346B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5D13C1B62A38000A4346B /* MapKit.framework */; };
+		A2D9C72A1B60738B00E145C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9C7291B60738B00E145C6 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +44,7 @@
 		A2144E941B5EF06D006ACDCF /* CoffeePLZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeePLZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2144E981B5EF06D006ACDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2144E991B5EF06D006ACDCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A2144E9B1B5EF06D006ACDCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2144E9B1B5EF06D006ACDCF /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		A2144E9E1B5EF06D006ACDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2144EA01B5EF06D006ACDCF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A2144EA31B5EF06D006ACDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +63,9 @@
 		A2144ECB1B601FDC006ACDCF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A2144ECD1B601FE6006ACDCF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCoffeeViewController.swift; sourceTree = "<group>"; };
+		A2D5D13C1B62A38000A4346B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A2D9C7291B60738B00E145C6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D5D13D1B62A38000A4346B /* MapKit.framework in Frameworks */,
 				A2144ED01B601FEF006ACDCF /* libsqlite3.dylib in Frameworks */,
 				A2144ECE1B601FE6006ACDCF /* libz.dylib in Frameworks */,
 				A2144ECC1B601FDC006ACDCF /* SystemConfiguration.framework in Frameworks */,
@@ -95,6 +102,7 @@
 		A2144E8B1B5EF06D006ACDCF = {
 			isa = PBXGroup;
 			children = (
+				A2D5D13C1B62A38000A4346B /* MapKit.framework */,
 				A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */,
 				A2144ECD1B601FE6006ACDCF /* libz.dylib */,
 				A2144ECB1B601FDC006ACDCF /* SystemConfiguration.framework */,
@@ -126,8 +134,10 @@
 				A2144EB91B5F06F9006ACDCF /* Bolts.framework */,
 				A2144EBA1B5F06F9006ACDCF /* Parse.framework */,
 				A2144E991B5EF06D006ACDCF /* AppDelegate.swift */,
-				A2144E9B1B5EF06D006ACDCF /* ViewController.swift */,
+				A2144E9B1B5EF06D006ACDCF /* RootViewController.swift */,
+				A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */,
 				A2144E9D1B5EF06D006ACDCF /* Main.storyboard */,
+				A2D9C7291B60738B00E145C6 /* LoginViewController.swift */,
 				A2144EA01B5EF06D006ACDCF /* Images.xcassets */,
 				A2144EA21B5EF06D006ACDCF /* LaunchScreen.xib */,
 				A2144E971B5EF06D006ACDCF /* Supporting Files */,
@@ -260,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2144E9C1B5EF06D006ACDCF /* ViewController.swift in Sources */,
+				A2D9C72A1B60738B00E145C6 /* LoginViewController.swift in Sources */,
+				A2144E9C1B5EF06D006ACDCF /* RootViewController.swift in Sources */,
 				A2144E9A1B5EF06D006ACDCF /* AppDelegate.swift in Sources */,
+				A2D5D13B1B62A1DC00A4346B /* GetCoffeeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +477,7 @@
 				A2144EB51B5EF06D006ACDCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2144EB61B5EF06D006ACDCF /* Build configuration list for PBXNativeTarget "CoffeePLZTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +486,7 @@
 				A2144EB81B5EF06D006ACDCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
