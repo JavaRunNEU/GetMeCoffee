@@ -9,12 +9,11 @@
 import UIKit
 import CoreLocation
 
-class GetCoffeeViewController: UIViewController,CLLocationManagerDelegate, UITabBarDelegate {
+class GetCoffeeViewController: UIViewController,CLLocationManagerDelegate {
 
     let manager = CLLocationManager()
 
 
-    @IBOutlet weak var tabBar: UITabBar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +22,9 @@ class GetCoffeeViewController: UIViewController,CLLocationManagerDelegate, UITab
 
     }
 
+    
+
+    
 
     //MARK:Helper methods
 
@@ -42,17 +44,6 @@ class GetCoffeeViewController: UIViewController,CLLocationManagerDelegate, UITab
         println(placemark.administrativeArea)
         println(placemark.description)
     }
-
-    //MARK:TabBar Delegate
-
-    func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem!) {
-        println(item.title)
-        println(tabBar.description)`
-
-        //if item.title!  == "Coffee now"
-        //perform a creepy controller modal popup like uber 
-    }
-
 
 
     //MARK:CLLocation Delegate

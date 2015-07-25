@@ -25,6 +25,8 @@
 		A2144ECC1B601FDC006ACDCF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECB1B601FDC006ACDCF /* SystemConfiguration.framework */; };
 		A2144ECE1B601FE6006ACDCF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECD1B601FE6006ACDCF /* libz.dylib */; };
 		A2144ED01B601FEF006ACDCF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */; };
+		A25B505C1B62D15000283F28 /* ActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B505B1B62D15000283F28 /* ActionView.xib */; };
+		A25B505E1B62D28F00283F28 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B505D1B62D28F00283F28 /* ActionView.swift */; };
 		A2D5D13B1B62A1DC00A4346B /* GetCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */; };
 		A2D5D13D1B62A38000A4346B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5D13C1B62A38000A4346B /* MapKit.framework */; };
 		A2D9C72A1B60738B00E145C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9C7291B60738B00E145C6 /* LoginViewController.swift */; };
@@ -63,6 +65,8 @@
 		A2144ECB1B601FDC006ACDCF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A2144ECD1B601FE6006ACDCF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A25B505B1B62D15000283F28 /* ActionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionView.xib; sourceTree = "<group>"; };
+		A25B505D1B62D28F00283F28 /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCoffeeViewController.swift; sourceTree = "<group>"; };
 		A2D5D13C1B62A38000A4346B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A2D9C7291B60738B00E145C6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		A2144E8B1B5EF06D006ACDCF = {
 			isa = PBXGroup;
 			children = (
+				A25B505B1B62D15000283F28 /* ActionView.xib */,
 				A2D5D13C1B62A38000A4346B /* MapKit.framework */,
 				A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */,
 				A2144ECD1B601FE6006ACDCF /* libz.dylib */,
@@ -141,6 +146,7 @@
 				A2144EA01B5EF06D006ACDCF /* Images.xcassets */,
 				A2144EA21B5EF06D006ACDCF /* LaunchScreen.xib */,
 				A2144E971B5EF06D006ACDCF /* Supporting Files */,
+				A25B505D1B62D28F00283F28 /* ActionView.swift */,
 			);
 			path = CoffeePLZ;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25B505C1B62D15000283F28 /* ActionView.xib in Resources */,
 				A2144E9F1B5EF06D006ACDCF /* Main.storyboard in Resources */,
 				A2144EA41B5EF06D006ACDCF /* LaunchScreen.xib in Resources */,
 				A2144EA11B5EF06D006ACDCF /* Images.xcassets in Resources */,
@@ -270,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25B505E1B62D28F00283F28 /* ActionView.swift in Sources */,
 				A2D9C72A1B60738B00E145C6 /* LoginViewController.swift in Sources */,
 				A2144E9C1B5EF06D006ACDCF /* RootViewController.swift in Sources */,
 				A2144E9A1B5EF06D006ACDCF /* AppDelegate.swift in Sources */,

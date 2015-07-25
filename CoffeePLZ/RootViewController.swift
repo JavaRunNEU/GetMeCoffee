@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import Parse
 
-class RootViewController: UIViewController {
+class RootViewController: UIViewController{
 
 
 
@@ -21,6 +21,12 @@ class RootViewController: UIViewController {
         //        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
         //            println("Object has been saved.")
         //        }
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "GoGetGetCoffee" {
+//            segue.destinationViewController.delegate = self
+        }
     }
 
     @IBAction func onDrinkNowTapped(sender: UIButton) {
