@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import GoogleMaps
 
-class GetCoffeeViewController: UIViewController ,CLLocationManagerDelegate {
+class GetCoffeeViewController: UIViewController ,CLLocationManagerDelegate,UIScrollViewDelegate {
 
     let manager = CLLocationManager()
 
@@ -28,11 +28,8 @@ class GetCoffeeViewController: UIViewController ,CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.manager.delegate = self
-        if (revealViewController() != nil) {
-            setUpHamburger()
-        }
+        setUpHamburger()
         getLocationInfo()
-
     }
 
 
