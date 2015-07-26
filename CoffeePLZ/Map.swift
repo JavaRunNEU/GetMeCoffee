@@ -8,13 +8,22 @@
 
 import UIKit
 import GoogleMaps
+import CoreLocation
 
-@IBDesignable class Map: UIView {
+@IBDesignable class Map: UIView,CLLocationManagerDelegate {
 
     var customView: UIView!
 
+    var manager = CLLocationManager()
 
     func putLocationOnMap(){
+
+        //set the delegates
+        self.manager.delegate = self
+        //get the location info
+        self.getLocationInfo()
+
+
         var camera = GMSCameraPosition.cameraWithLatitude(-33.86,
             longitude: 151.20, zoom: 6)
         var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
@@ -30,11 +39,55 @@ import GoogleMaps
 
     }
 
+    //MARK: CLLocationDelegate methods
+
+    //MARK:CLLocation Delegate
+
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        println(error)
+    }
+
+
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: { (placemarks, error) -> Void in
+            if error != nil {
+                println(error)
+                return //break of this method and return
+            }
+
+            if placemarks.count > 0{
+                let pm = placemarks[0] as! CLPlacemark
+                println(pm)
+            }
+            
+        })
+    }
+
+    //MARK: Helper methods
+
+    func getLocationInfo(){
+        self.manager.desiredAccuracy = kCLLocationAccuracyBest
+        self.manager.requestWhenInUseAuthorization()
+        self.manager.startUpdatingLocation()
+    }
+
+    func getCoordinates(){
+
+    }
 
 
     func xibSetup() {
         customView = loadViewFromNib()
+
+
+        //HEY PUT SHIT HERE
+
+
         putLocationOnMap()
+
+
+
+
         // use bounds not frame or it'll be offset
         customView.frame = self.bounds
 

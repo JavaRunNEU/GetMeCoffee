@@ -64,28 +64,6 @@ class GetCoffeeViewController: UIViewController ,CLLocationManagerDelegate {
 
 
 
-    //MARK:CLLocation Delegate
-
-    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
-        println(error)
-    }
-
-
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: { (placemarks, error) -> Void in
-            if error != nil {
-                println(error)
-                return //break of this method and return
-            }
-
-            if placemarks.count > 0{
-                let pm = placemarks[0] as! CLPlacemark
-
-                self.displayLocation(pm)
-            }
-            
-        })
-    }
 
 
 
