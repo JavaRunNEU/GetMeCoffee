@@ -26,7 +26,7 @@ class RootViewController: UIViewController{
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "GoGetGetCoffee" {
 //            let GVC = GetCoffeeViewController()
-
+            println("GOOO RN")
 //            segue.destinationViewController.delegate = self
         }
     }

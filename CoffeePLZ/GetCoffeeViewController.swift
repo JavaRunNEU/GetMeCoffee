@@ -28,14 +28,14 @@ class GetCoffeeViewController: UIViewController ,CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.manager.delegate = self
-
-        self.registerIcon.target = self.revealViewController()
-        self.registerIcon.action = Selector("revealToggle:")
-
-
+        if (revealViewController() != nil) {
+            setUpHamburger()
+        }
         getLocationInfo()
 
     }
+
+
 
     //MARK:Helper methods
 
@@ -43,10 +43,12 @@ class GetCoffeeViewController: UIViewController ,CLLocationManagerDelegate {
         self.manager.desiredAccuracy = kCLLocationAccuracyBest
         self.manager.requestWhenInUseAuthorization()
         self.manager.startUpdatingLocation()
+    }
 
-
-        println(manager)
-
+    func setUpHamburger(){
+        self.registerIcon.target = self.revealViewController()
+        self.registerIcon.action = Selector("revealToggle:")
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 
 
