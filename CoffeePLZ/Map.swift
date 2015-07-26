@@ -22,11 +22,11 @@ import GoogleMaps
 
         self.customView = mapView
 
-//        var marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
-//        marker.title = "Sydney"
-//        marker.snippet = "Australia"
-//        marker.map = mapView
+        var marker = GMSMarker()
+        marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
+        marker.title = "Sydney"
+        marker.snippet = "Australia"
+        marker.map = mapView
 
     }
 
@@ -34,7 +34,7 @@ import GoogleMaps
 
     func xibSetup() {
         customView = loadViewFromNib()
-
+        putLocationOnMap()
         // use bounds not frame or it'll be offset
         customView.frame = self.bounds
 

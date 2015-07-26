@@ -21,6 +21,7 @@ class GetCoffeeViewController: UIViewController ,CLLocationManagerDelegate {
 
 
     
+    @IBOutlet weak var mapView: Map!
 
 
 

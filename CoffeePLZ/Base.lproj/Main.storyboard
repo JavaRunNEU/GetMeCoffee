@@ -95,6 +95,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="mapView" destination="JGD-K5-7hL" id="mNs-y5-gLX"/>
                         <outlet property="registerIcon" destination="In3-fu-4bx" id="YQ0-K1-7Pr"/>
                         <outlet property="view" destination="6fW-bt-75h" id="pvp-pf-aNZ"/>
                     </connections>
