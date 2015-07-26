@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 //protocol ActionViewDelegate {
 //    func ActionView(didTapButton: String)
 //}
@@ -20,9 +21,6 @@ import UIKit
 
 
 
-    @IBAction func onPressMeTapped(sender: UIButton) {
-        println("tapped")
-    }
 
     func xibSetup() {
         customView = loadViewFromNib()

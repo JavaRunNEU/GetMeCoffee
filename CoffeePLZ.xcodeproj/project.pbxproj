@@ -27,9 +27,16 @@
 		A2144ED01B601FEF006ACDCF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */; };
 		A25B505C1B62D15000283F28 /* ActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B505B1B62D15000283F28 /* ActionView.xib */; };
 		A25B505E1B62D28F00283F28 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B505D1B62D28F00283F28 /* ActionView.swift */; };
+		A2BCA18B1B647465005660E6 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BCA18A1B647465005660E6 /* Twitter.framework */; };
+		A2BCA18D1B647486005660E6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BCA18C1B647486005660E6 /* Accounts.framework */; };
+		A2BCA18F1B647621005660E6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BCA18E1B647621005660E6 /* Social.framework */; };
+		A2BCA1911B648463005660E6 /* Map.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BCA1901B648463005660E6 /* Map.xib */; };
+		A2BCA1931B648755005660E6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BCA1921B648755005660E6 /* Map.swift */; };
+		A2C7EE271B64159200888529 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C7EE261B64159200888529 /* SWRevealViewController.m */; };
 		A2D5D13B1B62A1DC00A4346B /* GetCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */; };
 		A2D5D13D1B62A38000A4346B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5D13C1B62A38000A4346B /* MapKit.framework */; };
 		A2D9C72A1B60738B00E145C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9C7291B60738B00E145C6 /* LoginViewController.swift */; };
+		CA29D03084A3A3FE3291848A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE40D0EA61EBE72901FF354 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0882C29CD5489B5B8A7671D9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1BE40D0EA61EBE72901FF354 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2144E941B5EF06D006ACDCF /* CoffeePLZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeePLZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2144E981B5EF06D006ACDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2144E991B5EF06D006ACDCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,9 +76,18 @@
 		A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		A25B505B1B62D15000283F28 /* ActionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionView.xib; sourceTree = "<group>"; };
 		A25B505D1B62D28F00283F28 /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		A2BCA18A1B647465005660E6 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		A2BCA18C1B647486005660E6 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		A2BCA18E1B647621005660E6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A2BCA1901B648463005660E6 /* Map.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Map.xib; sourceTree = "<group>"; };
+		A2BCA1921B648755005660E6 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		A2C7EE241B64159100888529 /* CoffeePLZ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoffeePLZ-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2C7EE251B64159200888529 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		A2C7EE261B64159200888529 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCoffeeViewController.swift; sourceTree = "<group>"; };
 		A2D5D13C1B62A38000A4346B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A2D9C7291B60738B00E145C6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B9741077F55E9D178437959C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2BCA18F1B647621005660E6 /* Social.framework in Frameworks */,
+				A2BCA18D1B647486005660E6 /* Accounts.framework in Frameworks */,
+				A2BCA18B1B647465005660E6 /* Twitter.framework in Frameworks */,
 				A2D5D13D1B62A38000A4346B /* MapKit.framework in Frameworks */,
 				A2144ED01B601FEF006ACDCF /* libsqlite3.dylib in Frameworks */,
 				A2144ECE1B601FE6006ACDCF /* libz.dylib in Frameworks */,
@@ -90,6 +111,7 @@
 				A2144EBE1B5F09F3006ACDCF /* AudioToolbox.framework in Frameworks */,
 				A2144EBC1B5F06F9006ACDCF /* Parse.framework in Frameworks */,
 				A2144EBB1B5F06F9006ACDCF /* Bolts.framework in Frameworks */,
+				CA29D03084A3A3FE3291848A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +143,11 @@
 				A2144E961B5EF06D006ACDCF /* CoffeePLZ */,
 				A2144EAC1B5EF06D006ACDCF /* CoffeePLZTests */,
 				A2144E951B5EF06D006ACDCF /* Products */,
+				A2C7EE251B64159200888529 /* SWRevealViewController.h */,
+				A2C7EE261B64159200888529 /* SWRevealViewController.m */,
+				A2C7EE241B64159100888529 /* CoffeePLZ-Bridging-Header.h */,
+				CA37E8C69F1D5495043EA7C3 /* Pods */,
+				C7D8A1A9C5A0F13E7FDD92D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +174,8 @@
 				A2144EA21B5EF06D006ACDCF /* LaunchScreen.xib */,
 				A2144E971B5EF06D006ACDCF /* Supporting Files */,
 				A25B505D1B62D28F00283F28 /* ActionView.swift */,
+				A2BCA1901B648463005660E6 /* Map.xib */,
+				A2BCA1921B648755005660E6 /* Map.swift */,
 			);
 			path = CoffeePLZ;
 			sourceTree = "<group>";
@@ -176,6 +205,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C7D8A1A9C5A0F13E7FDD92D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2BCA18E1B647621005660E6 /* Social.framework */,
+				A2BCA18C1B647486005660E6 /* Accounts.framework */,
+				A2BCA18A1B647465005660E6 /* Twitter.framework */,
+				1BE40D0EA61EBE72901FF354 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA37E8C69F1D5495043EA7C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9741077F55E9D178437959C /* Pods.debug.xcconfig */,
+				0882C29CD5489B5B8A7671D9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2144EB31B5EF06D006ACDCF /* Build configuration list for PBXNativeTarget "CoffeePLZ" */;
 			buildPhases = (
+				7AB173DCF2E76989AFB57E5E /* Check Pods Manifest.lock */,
 				A2144E901B5EF06D006ACDCF /* Sources */,
 				A2144E911B5EF06D006ACDCF /* Frameworks */,
 				A2144E921B5EF06D006ACDCF /* Resources */,
+				648219E2A437BC8B9C48A872 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2BCA1911B648463005660E6 /* Map.xib in Resources */,
 				A25B505C1B62D15000283F28 /* ActionView.xib in Resources */,
 				A2144E9F1B5EF06D006ACDCF /* Main.storyboard in Resources */,
 				A2144EA41B5EF06D006ACDCF /* LaunchScreen.xib in Resources */,
@@ -272,6 +324,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		648219E2A437BC8B9C48A872 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AB173DCF2E76989AFB57E5E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2144E901B5EF06D006ACDCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -280,8 +365,10 @@
 				A25B505E1B62D28F00283F28 /* ActionView.swift in Sources */,
 				A2D9C72A1B60738B00E145C6 /* LoginViewController.swift in Sources */,
 				A2144E9C1B5EF06D006ACDCF /* RootViewController.swift in Sources */,
+				A2BCA1931B648755005660E6 /* Map.swift in Sources */,
 				A2144E9A1B5EF06D006ACDCF /* AppDelegate.swift in Sources */,
 				A2D5D13B1B62A1DC00A4346B /* GetCoffeeViewController.swift in Sources */,
+				A2C7EE271B64159200888529 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +493,10 @@
 		};
 		A2144EB41B5EF06D006ACDCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9741077F55E9D178437959C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CoffeePLZ",
@@ -415,13 +504,17 @@
 				INFOPLIST_FILE = CoffeePLZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoffeePLZ-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A2144EB51B5EF06D006ACDCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0882C29CD5489B5B8A7671D9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CoffeePLZ",
@@ -429,6 +522,7 @@
 				INFOPLIST_FILE = CoffeePLZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoffeePLZ-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionView" customModule="CoffeePLZ" customModuleProvider="target"/>
@@ -10,24 +11,42 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdS-xq-ky3">
-                    <rect key="frame" x="164" y="71" width="64" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brm-lq-83P">
+                    <rect key="frame" x="17" y="8" width="146" height="37"/>
+                    <color key="backgroundColor" red="0.029375873937306524" green="0.0040629503582114701" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="AoN-28-9Zn"/>
-                        <constraint firstAttribute="width" constant="64" id="dHn-5J-Gm1"/>
+                        <constraint firstAttribute="height" constant="37" id="dhA-tx-NPm"/>
                     </constraints>
-                    <state key="normal" title="Press me">
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="Coffee Now">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="onPressMeTapped:" destination="-1" eventType="touchUpInside" id="5Uv-VQ-tzv"/>
-                    </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4S2-nl-T4N">
+                    <rect key="frame" x="221" y="8" width="146" height="41"/>
+                    <color key="backgroundColor" red="0.029375873940000002" green="0.0040629503580000004" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="R7g-KE-fv4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="24"/>
+                    <state key="normal" title="Coffee Later">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="tEe-eQ-gnR">
+                    <rect key="frame" x="72" y="63" width="240" height="80"/>
+                    <date key="date" timeIntervalSinceReferenceDate="459543218.429425">
+                        <!--2015-07-25 18:53:38 +0000-->
+                    </date>
+                </datePicker>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="bdS-xq-ky3" secondAttribute="centerY" constant="-8" id="HEo-eK-Gjt"/>
-                <constraint firstAttribute="centerX" secondItem="bdS-xq-ky3" secondAttribute="centerX" constant="-8.5" id="sF1-5b-dO7"/>
+                <constraint firstItem="brm-lq-83P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="XUv-SD-D7P"/>
+                <constraint firstItem="brm-lq-83P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="eKc-EX-nIg"/>
+                <constraint firstItem="brm-lq-83P" firstAttribute="top" secondItem="4S2-nl-T4N" secondAttribute="top" id="gyu-XN-pXD"/>
+                <constraint firstItem="4S2-nl-T4N" firstAttribute="leading" secondItem="brm-lq-83P" secondAttribute="trailing" constant="58" id="kDZ-bL-mvU"/>
+                <constraint firstItem="4S2-nl-T4N" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="zYV-Wt-Kxb"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

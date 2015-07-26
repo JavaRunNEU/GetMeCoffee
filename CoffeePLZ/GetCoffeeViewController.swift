@@ -8,33 +8,47 @@
 
 import UIKit
 import CoreLocation
+import GoogleMaps
 
-class GetCoffeeViewController: UIViewController,CLLocationManagerDelegate {
+class GetCoffeeViewController: UIViewController ,CLLocationManagerDelegate {
 
     let manager = CLLocationManager()
+
+
+
+    @IBOutlet weak var registerIcon: UIBarButtonItem!
+
+
+
+    
 
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.manager.delegate = self
-        doManagerShiz()
+
+        self.registerIcon.target = self.revealViewController()
+        self.registerIcon.action = Selector("revealToggle:")
+
+
+        getLocationInfo()
 
     }
-
-    
-
-    
 
     //MARK:Helper methods
 
-    func doManagerShiz(){
+    func getLocationInfo(){
         self.manager.desiredAccuracy = kCLLocationAccuracyBest
         self.manager.requestWhenInUseAuthorization()
         self.manager.startUpdatingLocation()
+
+
         println(manager)
 
     }
+
+
 
     func displayLocation(placemark: CLPlacemark) {
         self.manager.stopUpdatingLocation()
@@ -44,6 +58,7 @@ class GetCoffeeViewController: UIViewController,CLLocationManagerDelegate {
         println(placemark.administrativeArea)
         println(placemark.description)
     }
+
 
 
     //MARK:CLLocation Delegate

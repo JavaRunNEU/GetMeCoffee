@@ -25,6 +25,8 @@ class RootViewController: UIViewController{
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "GoGetGetCoffee" {
+//            let GVC = GetCoffeeViewController()
+
 //            segue.destinationViewController.delegate = self
         }
     }
@@ -33,5 +35,7 @@ class RootViewController: UIViewController{
 
         self.performSegueWithIdentifier("GoToGetCoffee", sender: self)
     }
+
+
 }
 
