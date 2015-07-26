@@ -22,26 +22,46 @@ import CoreLocation
         self.manager.delegate = self
         //get the location info
         self.getLocationInfo()
-
-
-        var camera = GMSCameraPosition.cameraWithLatitude(-33.86,
-            longitude: 151.20, zoom: 6)
-        var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
-        mapView.myLocationEnabled = true
-
-        self.customView = mapView
-
-        var marker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
-
+        println(manager.location)
+        let (lat,lon) = (manager.location.coordinate.latitude,manager.location.coordinate.longitude)
+        makeMap(lat, lon: lon)
     }
 
-    //MARK: CLLocationDelegate methods
+    func makeMap(lat: Double, lon: Double) {
+        var camera = GMSCameraPosition.cameraWithLatitude(lat, longitude: lon, zoom: 16)
+        var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
+        mapView.myLocationEnabled = true
+        self.customView = mapView
+        var marker = GMSMarker()
+        marker.position = CLLocationCoordinate2DMake(lat, lon)
+        self.makeMarker(marker, completioneHandler: { (newMarker) -> () in
+            marker = newMarker
+        })
+        marker.map = mapView
+    }
 
-    //MARK:CLLocation Delegate
+    //MARK: Marker Helper method
+
+    func makeMarker(marker: GMSMarker, completioneHandler:(newMarker: GMSMarker)->()) {
+        CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: { (placemarks, error) -> Void in
+            if error != nil {
+                println(error)
+
+            }
+            if placemarks.count > 0{
+                let pm = placemarks[0] as! CLPlacemark
+                println(pm)
+                marker.title = pm.administrativeArea
+                marker.snippet = "ALEXXXX"
+                marker.icon = UIImage(named: "coffee")
+                completioneHandler(newMarker: marker)
+            }
+        })
+    }
+
+
+
+    //MARK: CLLocationDelegate methods
 
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         println(error)
@@ -57,7 +77,6 @@ import CoreLocation
 
             if placemarks.count > 0{
                 let pm = placemarks[0] as! CLPlacemark
-                println(pm)
             }
             
         })
@@ -70,11 +89,6 @@ import CoreLocation
         self.manager.requestWhenInUseAuthorization()
         self.manager.startUpdatingLocation()
     }
-
-    func getCoordinates(){
-
-    }
-
 
     func xibSetup() {
         customView = loadViewFromNib()
