@@ -33,7 +33,6 @@ class RootViewController: UIViewController{
 
     @IBAction func onDrinkNowTapped(sender: UIButton) {
 
-        self.performSegueWithIdentifier("GoToGetCoffee", sender: self)
     }
 
 

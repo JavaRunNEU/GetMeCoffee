@@ -23,8 +23,8 @@ import CoreLocation
         //get the location info
         self.getLocationInfo()
         println(manager.location)
-        let (lat,lon) = (manager.location.coordinate.latitude,manager.location.coordinate.longitude)
-        makeMap(lat, lon: lon)
+//        let (lat,lon) = (manager.location.coordinate.latitude,manager.location.coordinate.longitude)
+//        makeMap(lat, lon: lon)
     }
 
     func makeMap(lat: Double, lon: Double) {

@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import GoogleMaps
 
-class GetCoffeeViewController: UIViewController ,CLLocationManagerDelegate,UIScrollViewDelegate {
+class GetCoffeeViewController: UIViewController ,CLLocationManagerDelegat3,UIScrollViewDelegate {
 
     let manager = CLLocationManager()
 
