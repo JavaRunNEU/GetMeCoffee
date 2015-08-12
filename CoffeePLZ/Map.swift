@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import GoogleMaps
+import SwiftyJSON
 import CoreLocation
+import GoogleMaps
 
 @IBDesignable class Map: UIView,CLLocationManagerDelegate {
 
