@@ -14,9 +14,12 @@ import GoogleMaps
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var root: UINavigationController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+
         Parse.setApplicationId("UNw9uU7NNidkQ9R4PW5rElbbSB2eTl2qFRIPLtya",
             clientKey: "4XfhydBgT3l4iYnZZr8XdJXd4Uo0aBdGWDA4GOJr")
 

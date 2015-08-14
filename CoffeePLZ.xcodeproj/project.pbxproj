@@ -35,6 +35,39 @@
 		A2BCA1931B648755005660E6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BCA1921B648755005660E6 /* Map.swift */; };
 		A2C7EE271B64159200888529 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C7EE261B64159200888529 /* SWRevealViewController.m */; };
 		A2D11E831B7AB2C40038AA65 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D11E821B7AB2C40038AA65 /* Bolts.framework */; };
+		A2D11E851B7BD5570038AA65 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D11E841B7BD5570038AA65 /* DataManager.swift */; };
+		A2D11E911B7E49560038AA65 /* kimonoData.json in Resources */ = {isa = PBXBuildFile; fileRef = A2D11E901B7E49560038AA65 /* kimonoData.json */; };
+		A2D11E961B7E4F210038AA65 /* DHCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D11E941B7E4F200038AA65 /* DHCollectionTableViewCell.swift */; };
+		A2D11E971B7E4F210038AA65 /* DHCollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D11E951B7E4F200038AA65 /* DHCollectionTableViewController.swift */; };
+		A2D11E9A1B7E58520038AA65 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D11E981B7E58520038AA65 /* MenuItemCell.swift */; };
+		A2D11E9B1B7E58520038AA65 /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2D11E991B7E58520038AA65 /* MenuItemCell.xib */; };
+		A2D11EA91B7E8C7E0038AA65 /* SecondCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D11EA81B7E8C7E0038AA65 /* SecondCollectionViewController.swift */; };
+		A2D11EAB1B7E9ED80038AA65 /* CKWaveCollectionViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D11EAA1B7E9ED80038AA65 /* CKWaveCollectionViewAnimator.swift */; };
+		A2D11EB01B7E9EF60038AA65 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D11EAC1B7E9EF50038AA65 /* UIApplicationExtension.swift */; };
+		A2D11EB11B7E9EF60038AA65 /* UICollectionViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D11EAD1B7E9EF50038AA65 /* UICollectionViewControllerExtension.swift */; };
+		A2D11EB21B7E9EF60038AA65 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D11EAE1B7E9EF60038AA65 /* UICollectionViewExtension.swift */; };
+		A2D11EB31B7E9EF60038AA65 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D11EAF1B7E9EF60038AA65 /* UIViewControllerExtension.swift */; };
+		A2D11EB51B7E9FB80038AA65 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D11EB41B7E9FB80038AA65 /* NavigationControllerDelegate.swift */; };
+		A2D11ECC1B7EA20F0038AA65 /* CONTRIBUTING.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EB81B7EA20F0038AA65 /* CONTRIBUTING.txt */; };
+		A2D11ECD1B7EA20F0038AA65 /* copyright.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EB91B7EA20F0038AA65 /* copyright.txt */; };
+		A2D11ECE1B7EA20F0038AA65 /* FONTLOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EBA1B7EA20F0038AA65 /* FONTLOG.txt */; };
+		A2D11ECF1B7EA20F0038AA65 /* LICENCE-FAQ.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EBB1B7EA20F0038AA65 /* LICENCE-FAQ.txt */; };
+		A2D11ED01B7EA20F0038AA65 /* LICENCE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EBC1B7EA20F0038AA65 /* LICENCE.txt */; };
+		A2D11ED11B7EA20F0038AA65 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EBD1B7EA20F0038AA65 /* README.txt */; };
+		A2D11ED21B7EA20F0038AA65 /* TRADEMARKS.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EBE1B7EA20F0038AA65 /* TRADEMARKS.txt */; };
+		A2D11ED31B7EA20F0038AA65 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EBF1B7EA20F0038AA65 /* Ubuntu-B.ttf */; };
+		A2D11ED41B7EA20F0038AA65 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EC01B7EA20F0038AA65 /* Ubuntu-BI.ttf */; };
+		A2D11ED51B7EA20F0038AA65 /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EC11B7EA20F0038AA65 /* Ubuntu-C.ttf */; };
+		A2D11ED61B7EA20F0038AA65 /* Ubuntu-L.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EC21B7EA20F0038AA65 /* Ubuntu-L.ttf */; };
+		A2D11ED71B7EA20F0038AA65 /* Ubuntu-LI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EC31B7EA20F0038AA65 /* Ubuntu-LI.ttf */; };
+		A2D11ED81B7EA20F0038AA65 /* Ubuntu-M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EC41B7EA20F0038AA65 /* Ubuntu-M.ttf */; };
+		A2D11ED91B7EA20F0038AA65 /* Ubuntu-MI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EC51B7EA20F0038AA65 /* Ubuntu-MI.ttf */; };
+		A2D11EDA1B7EA20F0038AA65 /* Ubuntu-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EC61B7EA20F0038AA65 /* Ubuntu-R.ttf */; };
+		A2D11EDB1B7EA20F0038AA65 /* Ubuntu-RI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EC71B7EA20F0038AA65 /* Ubuntu-RI.ttf */; };
+		A2D11EDC1B7EA20F0038AA65 /* UbuntuMono-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EC81B7EA20F0038AA65 /* UbuntuMono-B.ttf */; };
+		A2D11EDD1B7EA20F0038AA65 /* UbuntuMono-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11EC91B7EA20F0038AA65 /* UbuntuMono-BI.ttf */; };
+		A2D11EDE1B7EA20F0038AA65 /* UbuntuMono-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11ECA1B7EA20F0038AA65 /* UbuntuMono-R.ttf */; };
+		A2D11EDF1B7EA20F0038AA65 /* UbuntuMono-RI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D11ECB1B7EA20F0038AA65 /* UbuntuMono-RI.ttf */; };
 		A2D5D13B1B62A1DC00A4346B /* GetCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */; };
 		A2D5D13D1B62A38000A4346B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5D13C1B62A38000A4346B /* MapKit.framework */; };
 		A2D9C72A1B60738B00E145C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9C7291B60738B00E145C6 /* LoginViewController.swift */; };
@@ -141,6 +174,40 @@
 		A2C7EE251B64159200888529 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		A2C7EE261B64159200888529 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A2D11E821B7AB2C40038AA65 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		A2D11E841B7BD5570038AA65 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A2D11E901B7E49560038AA65 /* kimonoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kimonoData.json; sourceTree = "<group>"; };
+		A2D11E921B7E49E20038AA65 /* parsePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = parsePlayground.playground; sourceTree = "<group>"; };
+		A2D11E941B7E4F200038AA65 /* DHCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		A2D11E951B7E4F200038AA65 /* DHCollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHCollectionTableViewController.swift; sourceTree = "<group>"; };
+		A2D11E981B7E58520038AA65 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		A2D11E991B7E58520038AA65 /* MenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemCell.xib; sourceTree = "<group>"; };
+		A2D11EA81B7E8C7E0038AA65 /* SecondCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCollectionViewController.swift; sourceTree = "<group>"; };
+		A2D11EAA1B7E9ED80038AA65 /* CKWaveCollectionViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKWaveCollectionViewAnimator.swift; sourceTree = "<group>"; };
+		A2D11EAC1B7E9EF50038AA65 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		A2D11EAD1B7E9EF50038AA65 /* UICollectionViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewControllerExtension.swift; sourceTree = "<group>"; };
+		A2D11EAE1B7E9EF60038AA65 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		A2D11EAF1B7E9EF60038AA65 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		A2D11EB41B7E9FB80038AA65 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		A2D11EB81B7EA20F0038AA65 /* CONTRIBUTING.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CONTRIBUTING.txt; sourceTree = "<group>"; };
+		A2D11EB91B7EA20F0038AA65 /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
+		A2D11EBA1B7EA20F0038AA65 /* FONTLOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FONTLOG.txt; sourceTree = "<group>"; };
+		A2D11EBB1B7EA20F0038AA65 /* LICENCE-FAQ.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LICENCE-FAQ.txt"; sourceTree = "<group>"; };
+		A2D11EBC1B7EA20F0038AA65 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
+		A2D11EBD1B7EA20F0038AA65 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		A2D11EBE1B7EA20F0038AA65 /* TRADEMARKS.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TRADEMARKS.txt; sourceTree = "<group>"; };
+		A2D11EBF1B7EA20F0038AA65 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
+		A2D11EC01B7EA20F0038AA65 /* Ubuntu-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BI.ttf"; sourceTree = "<group>"; };
+		A2D11EC11B7EA20F0038AA65 /* Ubuntu-C.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-C.ttf"; sourceTree = "<group>"; };
+		A2D11EC21B7EA20F0038AA65 /* Ubuntu-L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-L.ttf"; sourceTree = "<group>"; };
+		A2D11EC31B7EA20F0038AA65 /* Ubuntu-LI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LI.ttf"; sourceTree = "<group>"; };
+		A2D11EC41B7EA20F0038AA65 /* Ubuntu-M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-M.ttf"; sourceTree = "<group>"; };
+		A2D11EC51B7EA20F0038AA65 /* Ubuntu-MI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MI.ttf"; sourceTree = "<group>"; };
+		A2D11EC61B7EA20F0038AA65 /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-R.ttf"; sourceTree = "<group>"; };
+		A2D11EC71B7EA20F0038AA65 /* Ubuntu-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-RI.ttf"; sourceTree = "<group>"; };
+		A2D11EC81B7EA20F0038AA65 /* UbuntuMono-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-B.ttf"; sourceTree = "<group>"; };
+		A2D11EC91B7EA20F0038AA65 /* UbuntuMono-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-BI.ttf"; sourceTree = "<group>"; };
+		A2D11ECA1B7EA20F0038AA65 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-R.ttf"; sourceTree = "<group>"; };
+		A2D11ECB1B7EA20F0038AA65 /* UbuntuMono-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-RI.ttf"; sourceTree = "<group>"; };
 		A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCoffeeViewController.swift; sourceTree = "<group>"; };
 		A2D5D13C1B62A38000A4346B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A2D9C7291B60738B00E145C6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -225,20 +292,27 @@
 		A2144E961B5EF06D006ACDCF /* CoffeePLZ */ = {
 			isa = PBXGroup;
 			children = (
+				A2D11E931B7E4F200038AA65 /* DHCollectionTableViewController */,
 				A2AF981F1B7A871500BFC025 /* Parse.framework */,
 				A2144EB91B5F06F9006ACDCF /* Bolts.framework */,
 				A2144E991B5EF06D006ACDCF /* AppDelegate.swift */,
 				A2144E9B1B5EF06D006ACDCF /* RootViewController.swift */,
 				A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */,
+				A2D11EA81B7E8C7E0038AA65 /* SecondCollectionViewController.swift */,
 				A2144E9D1B5EF06D006ACDCF /* Main.storyboard */,
+				A27FCB161B7A77F000024E80 /* MenuViewController.swift */,
 				A2D9C7291B60738B00E145C6 /* LoginViewController.swift */,
+				A2D11E841B7BD5570038AA65 /* DataManager.swift */,
 				A2144EA01B5EF06D006ACDCF /* Images.xcassets */,
 				A2144EA21B5EF06D006ACDCF /* LaunchScreen.xib */,
 				A2144E971B5EF06D006ACDCF /* Supporting Files */,
 				A25B505D1B62D28F00283F28 /* ActionView.swift */,
-				A27FCB161B7A77F000024E80 /* MenuViewController.swift */,
+				A2D11E921B7E49E20038AA65 /* parsePlayground.playground */,
+				A2D11EB61B7EA0D80038AA65 /* CKNav */,
 				A2BCA1901B648463005660E6 /* Map.xib */,
+				A2D11EB71B7EA20F0038AA65 /* ubuntu-font-family-0.80 */,
 				A2BCA1921B648755005660E6 /* Map.swift */,
+				A2D11E901B7E49560038AA65 /* kimonoData.json */,
 			);
 			path = CoffeePLZ;
 			sourceTree = "<group>";
@@ -323,6 +397,57 @@
 			);
 			name = GoogleMaps;
 			path = Pods/Headers/Public/GoogleMaps/GoogleMaps;
+			sourceTree = "<group>";
+		};
+		A2D11E931B7E4F200038AA65 /* DHCollectionTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A2D11E941B7E4F200038AA65 /* DHCollectionTableViewCell.swift */,
+				A2D11E981B7E58520038AA65 /* MenuItemCell.swift */,
+				A2D11E991B7E58520038AA65 /* MenuItemCell.xib */,
+				A2D11E951B7E4F200038AA65 /* DHCollectionTableViewController.swift */,
+			);
+			path = DHCollectionTableViewController;
+			sourceTree = "<group>";
+		};
+		A2D11EB61B7EA0D80038AA65 /* CKNav */ = {
+			isa = PBXGroup;
+			children = (
+				A2D11EB41B7E9FB80038AA65 /* NavigationControllerDelegate.swift */,
+				A2D11EAA1B7E9ED80038AA65 /* CKWaveCollectionViewAnimator.swift */,
+				A2D11EAC1B7E9EF50038AA65 /* UIApplicationExtension.swift */,
+				A2D11EAD1B7E9EF50038AA65 /* UICollectionViewControllerExtension.swift */,
+				A2D11EAE1B7E9EF60038AA65 /* UICollectionViewExtension.swift */,
+				A2D11EAF1B7E9EF60038AA65 /* UIViewControllerExtension.swift */,
+			);
+			name = CKNav;
+			sourceTree = "<group>";
+		};
+		A2D11EB71B7EA20F0038AA65 /* ubuntu-font-family-0.80 */ = {
+			isa = PBXGroup;
+			children = (
+				A2D11EB81B7EA20F0038AA65 /* CONTRIBUTING.txt */,
+				A2D11EB91B7EA20F0038AA65 /* copyright.txt */,
+				A2D11EBA1B7EA20F0038AA65 /* FONTLOG.txt */,
+				A2D11EBB1B7EA20F0038AA65 /* LICENCE-FAQ.txt */,
+				A2D11EBC1B7EA20F0038AA65 /* LICENCE.txt */,
+				A2D11EBD1B7EA20F0038AA65 /* README.txt */,
+				A2D11EBE1B7EA20F0038AA65 /* TRADEMARKS.txt */,
+				A2D11EBF1B7EA20F0038AA65 /* Ubuntu-B.ttf */,
+				A2D11EC01B7EA20F0038AA65 /* Ubuntu-BI.ttf */,
+				A2D11EC11B7EA20F0038AA65 /* Ubuntu-C.ttf */,
+				A2D11EC21B7EA20F0038AA65 /* Ubuntu-L.ttf */,
+				A2D11EC31B7EA20F0038AA65 /* Ubuntu-LI.ttf */,
+				A2D11EC41B7EA20F0038AA65 /* Ubuntu-M.ttf */,
+				A2D11EC51B7EA20F0038AA65 /* Ubuntu-MI.ttf */,
+				A2D11EC61B7EA20F0038AA65 /* Ubuntu-R.ttf */,
+				A2D11EC71B7EA20F0038AA65 /* Ubuntu-RI.ttf */,
+				A2D11EC81B7EA20F0038AA65 /* UbuntuMono-B.ttf */,
+				A2D11EC91B7EA20F0038AA65 /* UbuntuMono-BI.ttf */,
+				A2D11ECA1B7EA20F0038AA65 /* UbuntuMono-R.ttf */,
+				A2D11ECB1B7EA20F0038AA65 /* UbuntuMono-RI.ttf */,
+			);
+			path = "ubuntu-font-family-0.80";
 			sourceTree = "<group>";
 		};
 		C7D8A1A9C5A0F13E7FDD92D0 /* Frameworks */ = {
@@ -432,11 +557,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D11ED91B7EA20F0038AA65 /* Ubuntu-MI.ttf in Resources */,
+				A2D11ED01B7EA20F0038AA65 /* LICENCE.txt in Resources */,
+				A2D11ED81B7EA20F0038AA65 /* Ubuntu-M.ttf in Resources */,
 				A2BCA1911B648463005660E6 /* Map.xib in Resources */,
 				A25B505C1B62D15000283F28 /* ActionView.xib in Resources */,
+				A2D11ED11B7EA20F0038AA65 /* README.txt in Resources */,
+				A2D11ED41B7EA20F0038AA65 /* Ubuntu-BI.ttf in Resources */,
+				A2D11ED21B7EA20F0038AA65 /* TRADEMARKS.txt in Resources */,
+				A2D11EDB1B7EA20F0038AA65 /* Ubuntu-RI.ttf in Resources */,
+				A2D11EDD1B7EA20F0038AA65 /* UbuntuMono-BI.ttf in Resources */,
+				A2D11ED61B7EA20F0038AA65 /* Ubuntu-L.ttf in Resources */,
+				A2D11EDE1B7EA20F0038AA65 /* UbuntuMono-R.ttf in Resources */,
+				A2D11ECE1B7EA20F0038AA65 /* FONTLOG.txt in Resources */,
+				A2D11ED71B7EA20F0038AA65 /* Ubuntu-LI.ttf in Resources */,
+				A2D11EDF1B7EA20F0038AA65 /* UbuntuMono-RI.ttf in Resources */,
+				A2D11ED31B7EA20F0038AA65 /* Ubuntu-B.ttf in Resources */,
+				A2D11E911B7E49560038AA65 /* kimonoData.json in Resources */,
+				A2D11ED51B7EA20F0038AA65 /* Ubuntu-C.ttf in Resources */,
 				A2144E9F1B5EF06D006ACDCF /* Main.storyboard in Resources */,
 				A2144EA41B5EF06D006ACDCF /* LaunchScreen.xib in Resources */,
+				A2D11E9B1B7E58520038AA65 /* MenuItemCell.xib in Resources */,
+				A2D11ECC1B7EA20F0038AA65 /* CONTRIBUTING.txt in Resources */,
+				A2D11EDA1B7EA20F0038AA65 /* Ubuntu-R.ttf in Resources */,
+				A2D11ECD1B7EA20F0038AA65 /* copyright.txt in Resources */,
+				A2D11ECF1B7EA20F0038AA65 /* LICENCE-FAQ.txt in Resources */,
 				A2144EA11B5EF06D006ACDCF /* Images.xcassets in Resources */,
+				A2D11EDC1B7EA20F0038AA65 /* UbuntuMono-B.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,11 +651,22 @@
 			files = (
 				A25B505E1B62D28F00283F28 /* ActionView.swift in Sources */,
 				A2D9C72A1B60738B00E145C6 /* LoginViewController.swift in Sources */,
+				A2D11EB31B7E9EF60038AA65 /* UIViewControllerExtension.swift in Sources */,
 				A2144E9C1B5EF06D006ACDCF /* RootViewController.swift in Sources */,
+				A2D11E961B7E4F210038AA65 /* DHCollectionTableViewCell.swift in Sources */,
+				A2D11EAB1B7E9ED80038AA65 /* CKWaveCollectionViewAnimator.swift in Sources */,
+				A2D11EB51B7E9FB80038AA65 /* NavigationControllerDelegate.swift in Sources */,
 				A2BCA1931B648755005660E6 /* Map.swift in Sources */,
 				A2144E9A1B5EF06D006ACDCF /* AppDelegate.swift in Sources */,
 				A2D5D13B1B62A1DC00A4346B /* GetCoffeeViewController.swift in Sources */,
+				A2D11EB21B7E9EF60038AA65 /* UICollectionViewExtension.swift in Sources */,
+				A2D11EA91B7E8C7E0038AA65 /* SecondCollectionViewController.swift in Sources */,
+				A2D11E971B7E4F210038AA65 /* DHCollectionTableViewController.swift in Sources */,
+				A2D11EB11B7E9EF60038AA65 /* UICollectionViewControllerExtension.swift in Sources */,
 				A2C7EE271B64159200888529 /* SWRevealViewController.m in Sources */,
+				A2D11E9A1B7E58520038AA65 /* MenuItemCell.swift in Sources */,
+				A2D11EB01B7E9EF60038AA65 /* UIApplicationExtension.swift in Sources */,
+				A2D11E851B7BD5570038AA65 /* DataManager.swift in Sources */,
 				A27FCB171B7A77F000024E80 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

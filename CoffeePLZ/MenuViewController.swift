@@ -1,4 +1,4 @@
-//
+    //
 //  MenuViewController.swift
 //  CoffeePLZ
 //
@@ -8,95 +8,94 @@
 
 import UIKit
 import SwiftyJSON
+import Alamofire
 
 
-let reuseIdentifier = "Cell"
 
-class MenuViewController: UICollectionViewController {
+class MenuViewController: UICollectionViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+
+    var json: JSON = JSON.nullJSON
+
+
+    internal let animationDuration: Double! = 1.0
+    
+    let kSecondVCId = "secondVC"
+    let kCellId = "cellId"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
-
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        //#warning Incomplete method implementation -- Return the number of sections
-        return 1
-    }
-
-
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //#warning Incomplete method implementation -- Return the number of items in the section
-        return 3
-    }
-
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
-
-        cell.backgroundColor = UIColor.blueColor()
-
-        cell.frame = CGRectMake(0, 0, ((view.frame.width)*.5), ((view.frame.height)x.5))
-
-        // Configure the cell
     
+        parseMenu()
+
+
+
+
+
+    }
+
+
+    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation,
+        fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+
+            let animator = CKWaveCollectionViewAnimator()
+
+            if operation != UINavigationControllerOperation.Push {
+
+                animator.reversed = true
+            }
+            
+            return animator
+    }
+    
+    //MARK :- UICollectionViewDelegate
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+
+        self.selectedIndexPath = indexPath
+
+        var vc = self.storyboard?.instantiateViewControllerWithIdentifier(kSecondVCId) as? SecondCollectionViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+
+
+    //MARK :- UICollectionViewDataSource
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+
+//        var cell:UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(kCellId, forIndexPath: indexPath) as! MenuItemCell
+
+        var cell :UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(kCellId, forIndexPath: indexPath) as! UICollectionViewCell
+
+//        cell.title.text = "K"
+        self.collectionView?.registerClass(MenuItemCell.self, forCellWithReuseIdentifier: kCellId)
+
+        
+
+//        cell.image.image =  UIImage(named: "")
+
         return cell
     }
 
-    // MARK: UICollectionViewDelegate
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
 
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
 
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+    //MARK: Parsing menu
+    func parseMenu() {
+        if let file = NSBundle(forClass:AppDelegate.self).pathForResource("kimonoData", ofType: "json") {
+            let data = NSData(contentsOfFile: file)!
+            self.json = JSON(data:data)
+            println(self.json["results"]["collection1"][0]["property2"][1]["href"])
+        } else {
+            //do something with error checking
+        }
 
-        println("OKAY you selected this path \(indexPath.row) ")
-        return true
     }
 
 
-//     Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
 
-
-        println(indexPath)
-        return true
-    }
-
-
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
-    
-    }
 
 }
