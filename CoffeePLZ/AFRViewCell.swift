@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource {
 
@@ -14,7 +15,7 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
     @IBOutlet weak var collectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        parseMenu()
 
 
         self.collectionView.backgroundView?.backgroundColor = UIColor(red: 204.0/255.0, green: 204.0/255.0, blue: 204.0/255.0, alpha: 1.0)
@@ -32,22 +33,38 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
 
     }
 
+    func setCollectionViewDataSourceDelegate(dataSourceDelegate delegate: protocol<UICollectionViewDelegate,UICollectionViewDataSource>, indexPath: NSIndexPath) {
+        self.collectionView.dataSource = delegate
+        self.collectionView.delegate = delegate
+        self.collectionView.tag = indexPath.section
+        self.collectionView.reloadData()
+    }
+
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        //    ORGArticleCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ORGArticleCollectionViewCell" forIndexPath:indexPath];
-        //    NSDictionary *cellData = [self.collectionData objectAtIndex:[indexPath row]];
-        //    cell.articleTitle.text = [cellData objectForKey:@"title"];
-        //    return cell;        return
 
         var cell: AFMenuCell = collectionView.dequeueReusableCellWithReuseIdentifier("AFMenuCell", forIndexPath: indexPath) as! AFMenuCell
+
+        cell.title.text = self.json["results"]["collection1"][indexPath.row]["property2"][1]["text"].string
+
 
         return cell
 
     }
 
 
+
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.json["results"]["collection1"].count
+    }
+
+
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         println(indexPath.row)
+
+
+        println(indexPath.description)
+        println(collectionView.collectionViewLayout.description)
         }
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -55,36 +72,39 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
     }
 
 
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+
+    var json: JSON = JSON.nullJSON
+
+
+    //MARK: Parsing menu
+    func parseMenu() {
+        if let file = NSBundle(forClass:AppDelegate.self).pathForResource("kimonoData", ofType: "json") {
+            let data = NSData(contentsOfFile: file)!
+            self.json = JSON(data:data)
+            println(self.json["results"]["collection1"][0]["property2"][1]["href"])
+        } else {
+            //do something with error checking
+        }
+        
     }
 
-//    #pragma mark - Getter/Setter overrides
-//    - (void)setCollectionData:(NSArray *)collectionData {
-//    _collectionData = collectionData;
-//    [_collectionView setContentOffset:CGPointZero animated:NO];
-//    [_collectionView reloadData];
-//    }
-//
-//
 
-//    - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-//    return [self.collectionData count];
-//    }
-//
-//    - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-//    {
-//    ORGArticleCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ORGArticleCollectionViewCell" forIndexPath:indexPath];
-//    NSDictionary *cellData = [self.collectionData objectAtIndex:[indexPath row]];
-//    cell.articleTitle.text = [cellData objectForKey:@"title"];
-//    return cell;
-//    }
-//
-//    - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-//    NSDictionary *cellData = [self.collectionData objectAtIndex:[indexPath row]];
-//    [[NSNotificationCenter defaultCenter] postNotificationName:@"didSelectItemFromCollectionView" object:cellData];
-//    }
-//    
+    //MARK: DHCOllection stuff
+
+
+    class DHIndexedCollectionView: UICollectionView {
+
+        var indexPath: NSIndexPath!
+
+        override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
+            super.init(frame: frame, collectionViewLayout: layout)
+        }
+
+        required init(coder aDecoder: NSCoder) {
+            super.init(coder: aDecoder)
+        }
+    }
+
 
     
 }
