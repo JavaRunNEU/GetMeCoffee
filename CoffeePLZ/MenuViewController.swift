@@ -28,10 +28,6 @@ class MenuViewController: UICollectionViewController,UICollectionViewDelegate,UI
     
         parseMenu()
 
-
-
-
-
     }
 
 
@@ -67,11 +63,6 @@ class MenuViewController: UICollectionViewController,UICollectionViewDelegate,UI
 
 //        cell.title.text = "K"
         self.collectionView?.registerClass(MenuItemCell.self, forCellWithReuseIdentifier: kCellId)
-
-        
-
-//        cell.image.image =  UIImage(named: "")
-
         return cell
     }
 

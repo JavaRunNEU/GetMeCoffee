@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A202661A1B8107020063342C /* ResturauntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20266191B8107020063342C /* ResturauntViewController.swift */; };
+		A202661D1B8109E40063342C /* AFRViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A202661B1B8109E40063342C /* AFRViewCell.swift */; };
+		A202661E1B8109E40063342C /* AFRViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202661C1B8109E40063342C /* AFRViewCell.xib */; };
+		A20266211B810FAF0063342C /* AFMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A202661F1B810FAF0063342C /* AFMenuCell.swift */; };
+		A20266221B810FAF0063342C /* AFMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20266201B810FAF0063342C /* AFMenuCell.xib */; };
 		A2144E9A1B5EF06D006ACDCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2144E991B5EF06D006ACDCF /* AppDelegate.swift */; };
 		A2144E9C1B5EF06D006ACDCF /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2144E9B1B5EF06D006ACDCF /* RootViewController.swift */; };
 		A2144E9F1B5EF06D006ACDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2144E9D1B5EF06D006ACDCF /* Main.storyboard */; };
@@ -87,6 +92,11 @@
 /* Begin PBXFileReference section */
 		0882C29CD5489B5B8A7671D9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		99372BCA11D61B3CEE7C7E8D /* Pods_CoffeePLZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeePLZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20266191B8107020063342C /* ResturauntViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResturauntViewController.swift; sourceTree = "<group>"; };
+		A202661B1B8109E40063342C /* AFRViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFRViewCell.swift; sourceTree = "<group>"; };
+		A202661C1B8109E40063342C /* AFRViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFRViewCell.xib; sourceTree = "<group>"; };
+		A202661F1B810FAF0063342C /* AFMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFMenuCell.swift; sourceTree = "<group>"; };
+		A20266201B810FAF0063342C /* AFMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFMenuCell.xib; sourceTree = "<group>"; };
 		A2144E941B5EF06D006ACDCF /* CoffeePLZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeePLZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2144E981B5EF06D006ACDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2144E991B5EF06D006ACDCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -300,6 +310,11 @@
 				A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */,
 				A2D11EA81B7E8C7E0038AA65 /* SecondCollectionViewController.swift */,
 				A2144E9D1B5EF06D006ACDCF /* Main.storyboard */,
+				A20266191B8107020063342C /* ResturauntViewController.swift */,
+				A202661B1B8109E40063342C /* AFRViewCell.swift */,
+				A202661C1B8109E40063342C /* AFRViewCell.xib */,
+				A202661F1B810FAF0063342C /* AFMenuCell.swift */,
+				A20266201B810FAF0063342C /* AFMenuCell.xib */,
 				A27FCB161B7A77F000024E80 /* MenuViewController.swift */,
 				A2D9C7291B60738B00E145C6 /* LoginViewController.swift */,
 				A2D11E841B7BD5570038AA65 /* DataManager.swift */,
@@ -564,6 +579,7 @@
 				A25B505C1B62D15000283F28 /* ActionView.xib in Resources */,
 				A2D11ED11B7EA20F0038AA65 /* README.txt in Resources */,
 				A2D11ED41B7EA20F0038AA65 /* Ubuntu-BI.ttf in Resources */,
+				A20266221B810FAF0063342C /* AFMenuCell.xib in Resources */,
 				A2D11ED21B7EA20F0038AA65 /* TRADEMARKS.txt in Resources */,
 				A2D11EDB1B7EA20F0038AA65 /* Ubuntu-RI.ttf in Resources */,
 				A2D11EDD1B7EA20F0038AA65 /* UbuntuMono-BI.ttf in Resources */,
@@ -573,6 +589,7 @@
 				A2D11ED71B7EA20F0038AA65 /* Ubuntu-LI.ttf in Resources */,
 				A2D11EDF1B7EA20F0038AA65 /* UbuntuMono-RI.ttf in Resources */,
 				A2D11ED31B7EA20F0038AA65 /* Ubuntu-B.ttf in Resources */,
+				A202661E1B8109E40063342C /* AFRViewCell.xib in Resources */,
 				A2D11E911B7E49560038AA65 /* kimonoData.json in Resources */,
 				A2D11ED51B7EA20F0038AA65 /* Ubuntu-C.ttf in Resources */,
 				A2144E9F1B5EF06D006ACDCF /* Main.storyboard in Resources */,
@@ -650,10 +667,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25B505E1B62D28F00283F28 /* ActionView.swift in Sources */,
+				A20266211B810FAF0063342C /* AFMenuCell.swift in Sources */,
 				A2D9C72A1B60738B00E145C6 /* LoginViewController.swift in Sources */,
 				A2D11EB31B7E9EF60038AA65 /* UIViewControllerExtension.swift in Sources */,
 				A2144E9C1B5EF06D006ACDCF /* RootViewController.swift in Sources */,
 				A2D11E961B7E4F210038AA65 /* DHCollectionTableViewCell.swift in Sources */,
+				A202661A1B8107020063342C /* ResturauntViewController.swift in Sources */,
+				A202661D1B8109E40063342C /* AFRViewCell.swift in Sources */,
 				A2D11EAB1B7E9ED80038AA65 /* CKWaveCollectionViewAnimator.swift in Sources */,
 				A2D11EB51B7E9FB80038AA65 /* NavigationControllerDelegate.swift in Sources */,
 				A2BCA1931B648755005660E6 /* Map.swift in Sources */,
