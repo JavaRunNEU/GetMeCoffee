@@ -9,6 +9,12 @@
 import UIKit
 import SwiftyJSON
 
+
+
+protocol AFRViewCellDelegate {
+    func cellSelected(cell: AFRViewCell)
+}
+
 class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource {
 
   
@@ -18,6 +24,8 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
         parseMenu()
 
 
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
         self.collectionView.backgroundView?.backgroundColor = UIColor(red: 204.0/255.0, green: 204.0/255.0, blue: 204.0/255.0, alpha: 1.0)
 
 
@@ -31,14 +39,9 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
         self.collectionView.registerNib(UINib(nibName: "AFMenuCell", bundle: nil), forCellWithReuseIdentifier: "AFMenuCell")
 
 
+
     }
 
-    func setCollectionViewDataSourceDelegate(dataSourceDelegate delegate: protocol<UICollectionViewDelegate,UICollectionViewDataSource>, indexPath: NSIndexPath) {
-        self.collectionView.dataSource = delegate
-        self.collectionView.delegate = delegate
-        self.collectionView.tag = indexPath.section
-        self.collectionView.reloadData()
-    }
 
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -58,13 +61,17 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
         return self.json["results"]["collection1"].count
     }
 
-
+    var delegate: AFRViewCellDelegate?
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        println(indexPath.row)
+        println(indexPath.row.description)
+
+        let shiz: AFMenuCell = collectionView.cellForItemAtIndexPath(indexPath) as! AFMenuCell
 
 
-        println(indexPath.description)
-        println(collectionView.collectionViewLayout.description)
+        delegate?.cellSelected(self)
+        println("okay so this is what i got for this \(shiz.title.text)")
+
+
         }
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -92,7 +99,7 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
     //MARK: DHCOllection stuff
 
 
-    class DHIndexedCollectionView: UICollectionView {
+    class FallahMenuCollectionView: UICollectionView {
 
         var indexPath: NSIndexPath!
 

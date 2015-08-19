@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class ResturauntViewController: UITableViewController {
+class ResturauntViewController: UITableViewController,UITableViewDataSource,UITableViewDelegate, AFRViewCellDelegate {
 
 
 
@@ -57,9 +57,7 @@ class ResturauntViewController: UITableViewController {
     }
 
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println(indexPath.section)
-    }
+   
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.json["results"]["collection1"].count
@@ -76,18 +74,14 @@ class ResturauntViewController: UITableViewController {
     }
 
 
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-
-    }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
 
 
-        let shiz:AFRViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! AFRViewCell
+        let cell:AFRViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! AFRViewCell
 
-
-        return shiz
+        return cell
     }
 
 

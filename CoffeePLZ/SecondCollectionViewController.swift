@@ -8,6 +8,10 @@
 
 import UIKit
 import CKWaveCollectionViewTransition
+
+
+
+
 class SecondCollectionViewController: UICollectionViewController {
 
     let kThirdVCId = "thirdVC"

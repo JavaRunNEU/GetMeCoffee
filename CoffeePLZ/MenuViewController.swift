@@ -49,6 +49,7 @@ class MenuViewController: UICollectionViewController,UICollectionViewDelegate,UI
 
         self.selectedIndexPath = indexPath
 
+
         var vc = self.storyboard?.instantiateViewControllerWithIdentifier(kSecondVCId) as? SecondCollectionViewController
         self.navigationController?.pushViewController(vc!, animated: true)
     }
@@ -61,8 +62,12 @@ class MenuViewController: UICollectionViewController,UICollectionViewDelegate,UI
 
         var cell :UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(kCellId, forIndexPath: indexPath) as! UICollectionViewCell
 
+
+
 //        cell.title.text = "K"
         self.collectionView?.registerClass(MenuItemCell.self, forCellWithReuseIdentifier: kCellId)
+
+        self.collectionView?.delegate = self
         return cell
     }
 
