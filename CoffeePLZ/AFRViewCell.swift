@@ -12,7 +12,7 @@ import SwiftyJSON
 
 
 protocol AFRViewCellDelegate {
-    func cellSelected(cell: AFRViewCell)
+    func cellButtonTapped(cell: AFRViewCell)
 }
 
 class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource {
@@ -63,16 +63,20 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
 
     var delegate: AFRViewCellDelegate?
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        println(indexPath.row.description)
+        //THE ROW OF 1 SINGLE COLLECTION VIEW CELL
+        println("UMMMM " + indexPath.row.description)
 
         let shiz: AFMenuCell = collectionView.cellForItemAtIndexPath(indexPath) as! AFMenuCell
 
 
-        delegate?.cellSelected(self)
-        println("okay so this is what i got for this \(shiz.title.text)")
-
-
+        if let delegate = delegate {
+            delegate.cellButtonTapped(self)
         }
+
+        println("okay so this is what i got for this \(shiz.title.text)")
+        
+
+    }
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1

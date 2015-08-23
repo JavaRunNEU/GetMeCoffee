@@ -80,10 +80,19 @@ class ResturauntViewController: UITableViewController,UITableViewDataSource,UITa
 
 
         let cell:AFRViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! AFRViewCell
+        cell.delegate = self
 
         return cell
     }
 
+
+
+    func cellButtonTapped(cell: AFRViewCell) {
+        let indexPath = tableView.indexPathForRowAtPoint(cell.center)!
+        println("INDEX PATH.ROW " + indexPath.row.description)
+        println("INDEX PATH.Section HELLO FARZIIIII" + indexPath.section.description)
+    }
+    
 
     
 
