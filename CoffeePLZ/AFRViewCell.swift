@@ -48,7 +48,7 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
 
         var cell: AFMenuCell = collectionView.dequeueReusableCellWithReuseIdentifier("AFMenuCell", forIndexPath: indexPath) as! AFMenuCell
 
-        cell.title.text = self.json["results"]["collection1"][indexPath.row]["property2"][1]["text"].string
+        cell.title.text = self.json[indexPath.row].string
 
 
         return cell
@@ -58,7 +58,7 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
 
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.json["results"]["collection1"].count
+        return self.json[section].count
     }
 
     var delegate: AFRViewCellDelegate?
@@ -89,10 +89,10 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
 
     //MARK: Parsing menu
     func parseMenu() {
-        if let file = NSBundle(forClass:AppDelegate.self).pathForResource("kimonoData", ofType: "json") {
+        if let file = NSBundle(forClass:AppDelegate.self).pathForResource("JavaMenu", ofType: "json") {
             let data = NSData(contentsOfFile: file)!
             self.json = JSON(data:data)
-            println(self.json["results"]["collection1"][0]["property2"][1]["href"])
+          
         } else {
             //do something with error checking
         }

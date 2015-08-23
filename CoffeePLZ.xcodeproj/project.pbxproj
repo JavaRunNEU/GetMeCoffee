@@ -30,6 +30,7 @@
 		A2144ED01B601FEF006ACDCF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */; };
 		A25B505C1B62D15000283F28 /* ActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B505B1B62D15000283F28 /* ActionView.xib */; };
 		A25B505E1B62D28F00283F28 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B505D1B62D28F00283F28 /* ActionView.swift */; };
+		A26FDCBE1B8A52A800B76439 /* JavaMenu.json in Resources */ = {isa = PBXBuildFile; fileRef = A26FDCBD1B8A52A800B76439 /* JavaMenu.json */; };
 		A27FCB171B7A77F000024E80 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FCB161B7A77F000024E80 /* MenuViewController.swift */; };
 		A2AF98201B7A871500BFC025 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AF981F1B7A871500BFC025 /* Parse.framework */; };
 		A2AF98861B7A8AA100BFC025 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AF98851B7A8AA100BFC025 /* Parse.framework */; };
@@ -122,6 +123,7 @@
 		A22B11B51B7A7A55003F6CEE /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		A25B505B1B62D15000283F28 /* ActionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionView.xib; sourceTree = "<group>"; };
 		A25B505D1B62D28F00283F28 /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		A26FDCBD1B8A52A800B76439 /* JavaMenu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = JavaMenu.json; path = ../../../../JavaMenu.json; sourceTree = "<group>"; };
 		A27FCB141B7A76CC00024E80 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		A27FCB161B7A77F000024E80 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A2AF981F1B7A871500BFC025 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 				A2D11EA81B7E8C7E0038AA65 /* SecondCollectionViewController.swift */,
 				A2144E9D1B5EF06D006ACDCF /* Main.storyboard */,
 				A20266191B8107020063342C /* ResturauntViewController.swift */,
+				A26FDCBD1B8A52A800B76439 /* JavaMenu.json */,
 				A202661B1B8109E40063342C /* AFRViewCell.swift */,
 				A202661C1B8109E40063342C /* AFRViewCell.xib */,
 				A202661F1B810FAF0063342C /* AFMenuCell.swift */,
@@ -592,6 +595,7 @@
 				A202661E1B8109E40063342C /* AFRViewCell.xib in Resources */,
 				A2D11E911B7E49560038AA65 /* kimonoData.json in Resources */,
 				A2D11ED51B7EA20F0038AA65 /* Ubuntu-C.ttf in Resources */,
+				A26FDCBE1B8A52A800B76439 /* JavaMenu.json in Resources */,
 				A2144E9F1B5EF06D006ACDCF /* Main.storyboard in Resources */,
 				A2144EA41B5EF06D006ACDCF /* LaunchScreen.xib in Resources */,
 				A2D11E9B1B7E58520038AA65 /* MenuItemCell.xib in Resources */,

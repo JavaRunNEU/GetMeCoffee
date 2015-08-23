@@ -5,3 +5,4 @@ use_frameworks!
 pod 'SwiftyJSON', '~> 2.2.1’
 pod 'Alamofire', '~> 1.3'
 pod 'CKWaveCollectionViewTransition', '~> 1.0'
+pod 'Spring', '~> 1.0.3'
