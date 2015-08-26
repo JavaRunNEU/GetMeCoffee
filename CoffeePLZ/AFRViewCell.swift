@@ -47,8 +47,8 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
 
         var cell: AFMenuCell = collectionView.dequeueReusableCellWithReuseIdentifier("AFMenuCell", forIndexPath: indexPath) as! AFMenuCell
-
-        cell.title.text = self.json[indexPath.row].string
+        println(self.json[1]["Menu"])
+        cell.title.text = self.json[1]["Menu"].string
 
 
         return cell
@@ -58,8 +58,10 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
 
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.json[section].count
+        var count = self.json[section]["Menu"].count
+        return count
     }
+
 
     var delegate: AFRViewCellDelegate?
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
@@ -82,11 +84,7 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
         return 1
     }
 
-
-
     var json: JSON = JSON.nullJSON
-
-
     //MARK: Parsing menu
     func parseMenu() {
         if let file = NSBundle(forClass:AppDelegate.self).pathForResource("JavaMenu", ofType: "json") {
@@ -97,23 +95,6 @@ class AFRViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewData
             //do something with error checking
         }
         
-    }
-
-
-    //MARK: DHCOllection stuff
-
-
-    class FallahMenuCollectionView: UICollectionView {
-
-        var indexPath: NSIndexPath!
-
-        override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
-            super.init(frame: frame, collectionViewLayout: layout)
-        }
-
-        required init(coder aDecoder: NSCoder) {
-            super.init(coder: aDecoder)
-        }
     }
 
 

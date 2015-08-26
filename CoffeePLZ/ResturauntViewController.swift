@@ -66,12 +66,6 @@ class ResturauntViewController: UITableViewController,UITableViewDataSource,UITa
 //    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 //        //do funky stuff with font
 //        let header = self.json["results"]["collection1"][section]["property2"][1]["text"].string
-//        if self.shiz == true
-//        {
-//
-//            return "OH SHIZ "
-//        }
-//
 //        return header
 //    }
 
@@ -89,7 +83,6 @@ class ResturauntViewController: UITableViewController,UITableViewDataSource,UITa
 //
 //        }
 
-
         return title
     }
 
@@ -98,13 +91,14 @@ class ResturauntViewController: UITableViewController,UITableViewDataSource,UITa
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-
-
         let cell:AFRViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! AFRViewCell
+
         cell.delegate = self
 
         return cell
     }
+
+
 
     func cellButtonTapped(cell: AFRViewCell) {
         let indexPath = tableView.indexPathForRowAtPoint(cell.center)!

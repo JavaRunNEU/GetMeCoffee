@@ -28,6 +28,7 @@
 		A2144ECC1B601FDC006ACDCF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECB1B601FDC006ACDCF /* SystemConfiguration.framework */; };
 		A2144ECE1B601FE6006ACDCF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECD1B601FE6006ACDCF /* libz.dylib */; };
 		A2144ED01B601FEF006ACDCF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */; };
+		A22D66841B8E296E003C5DA7 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22D66831B8E296E003C5DA7 /* MainMenuViewController.swift */; };
 		A25B505C1B62D15000283F28 /* ActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B505B1B62D15000283F28 /* ActionView.xib */; };
 		A25B505E1B62D28F00283F28 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B505D1B62D28F00283F28 /* ActionView.swift */; };
 		A26FDCBE1B8A52A800B76439 /* JavaMenu.json in Resources */ = {isa = PBXBuildFile; fileRef = A26FDCBD1B8A52A800B76439 /* JavaMenu.json */; };
@@ -108,7 +109,7 @@
 		A2144EA91B5EF06D006ACDCF /* CoffeePLZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeePLZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2144EAE1B5EF06D006ACDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2144EAF1B5EF06D006ACDCF /* CoffeePLZTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePLZTests.swift; sourceTree = "<group>"; };
-		A2144EB91B5F06F9006ACDCF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		A2144EB91B5F06F9006ACDCF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = CoffeePLZ/Bolts.framework; sourceTree = "<group>"; };
 		A2144EBD1B5F09F3006ACDCF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A2144EBF1B601FA5006ACDCF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A2144EC11B601FB0006ACDCF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,12 +122,13 @@
 		A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		A22B11B41B7A7A55003F6CEE /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		A22B11B51B7A7A55003F6CEE /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
-		A25B505B1B62D15000283F28 /* ActionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionView.xib; sourceTree = "<group>"; };
+		A22D66831B8E296E003C5DA7 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		A25B505B1B62D15000283F28 /* ActionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActionView.xib; path = ../ActionView.xib; sourceTree = "<group>"; };
 		A25B505D1B62D28F00283F28 /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		A26FDCBD1B8A52A800B76439 /* JavaMenu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = JavaMenu.json; path = ../../../../JavaMenu.json; sourceTree = "<group>"; };
 		A27FCB141B7A76CC00024E80 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		A27FCB161B7A77F000024E80 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		A2AF981F1B7A871500BFC025 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		A2AF981F1B7A871500BFC025 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = CoffeePLZ/Parse.framework; sourceTree = "<group>"; };
 		A2AF98541B7A887C00BFC025 /* GMSAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSAddress.h; sourceTree = "<group>"; };
 		A2AF98551B7A887C00BFC025 /* GMSAutocompleteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSAutocompleteFilter.h; sourceTree = "<group>"; };
 		A2AF98561B7A887C00BFC025 /* GMSAutocompleteMatchFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSAutocompleteMatchFragment.h; sourceTree = "<group>"; };
@@ -266,21 +268,7 @@
 		A2144E8B1B5EF06D006ACDCF = {
 			isa = PBXGroup;
 			children = (
-				A2D11E821B7AB2C40038AA65 /* Bolts.framework */,
-				A2AF98851B7A8AA100BFC025 /* Parse.framework */,
-				A2AF98531B7A887C00BFC025 /* GoogleMaps */,
-				A25B505B1B62D15000283F28 /* ActionView.xib */,
-				A2D5D13C1B62A38000A4346B /* MapKit.framework */,
-				A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */,
-				A2144ECD1B601FE6006ACDCF /* libz.dylib */,
-				A2144ECB1B601FDC006ACDCF /* SystemConfiguration.framework */,
-				A2144EC91B601FD2006ACDCF /* Security.framework */,
-				A2144EC71B601FC8006ACDCF /* QuartzCore.framework */,
-				A2144EC51B601FC2006ACDCF /* MobileCoreServices.framework */,
-				A2144EC31B601FBB006ACDCF /* CoreLocation.framework */,
-				A2144EC11B601FB0006ACDCF /* CoreGraphics.framework */,
-				A2144EBF1B601FA5006ACDCF /* CFNetwork.framework */,
-				A2144EBD1B5F09F3006ACDCF /* AudioToolbox.framework */,
+				A22D66821B8E290C003C5DA7 /* FrameWorks */,
 				A2144E961B5EF06D006ACDCF /* CoffeePLZ */,
 				A2144EAC1B5EF06D006ACDCF /* CoffeePLZTests */,
 				A2144E951B5EF06D006ACDCF /* Products */,
@@ -304,25 +292,14 @@
 		A2144E961B5EF06D006ACDCF /* CoffeePLZ */ = {
 			isa = PBXGroup;
 			children = (
-				A2D11E931B7E4F200038AA65 /* DHCollectionTableViewController */,
-				A2AF981F1B7A871500BFC025 /* Parse.framework */,
-				A2144EB91B5F06F9006ACDCF /* Bolts.framework */,
+				A22D66811B8E28DA003C5DA7 /* JavaRun  */,
 				A2144E991B5EF06D006ACDCF /* AppDelegate.swift */,
-				A2144E9B1B5EF06D006ACDCF /* RootViewController.swift */,
-				A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */,
-				A2D11EA81B7E8C7E0038AA65 /* SecondCollectionViewController.swift */,
 				A2144E9D1B5EF06D006ACDCF /* Main.storyboard */,
-				A20266191B8107020063342C /* ResturauntViewController.swift */,
 				A26FDCBD1B8A52A800B76439 /* JavaMenu.json */,
-				A202661B1B8109E40063342C /* AFRViewCell.swift */,
-				A202661C1B8109E40063342C /* AFRViewCell.xib */,
-				A202661F1B810FAF0063342C /* AFMenuCell.swift */,
-				A20266201B810FAF0063342C /* AFMenuCell.xib */,
-				A27FCB161B7A77F000024E80 /* MenuViewController.swift */,
-				A2D9C7291B60738B00E145C6 /* LoginViewController.swift */,
-				A2D11E841B7BD5570038AA65 /* DataManager.swift */,
+				A22D667F1B8E28C5003C5DA7 /* JavaRun Old */,
 				A2144EA01B5EF06D006ACDCF /* Images.xcassets */,
 				A2144EA21B5EF06D006ACDCF /* LaunchScreen.xib */,
+				A25B505B1B62D15000283F28 /* ActionView.xib */,
 				A2144E971B5EF06D006ACDCF /* Supporting Files */,
 				A25B505D1B62D28F00283F28 /* ActionView.swift */,
 				A2D11E921B7E49E20038AA65 /* parsePlayground.playground */,
@@ -358,6 +335,56 @@
 				A2144EAE1B5EF06D006ACDCF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A22D667F1B8E28C5003C5DA7 /* JavaRun Old */ = {
+			isa = PBXGroup;
+			children = (
+				A2D11E931B7E4F200038AA65 /* DHCollectionTableViewController */,
+				A2144E9B1B5EF06D006ACDCF /* RootViewController.swift */,
+				A2D5D13A1B62A1DC00A4346B /* GetCoffeeViewController.swift */,
+				A2D11EA81B7E8C7E0038AA65 /* SecondCollectionViewController.swift */,
+				A20266191B8107020063342C /* ResturauntViewController.swift */,
+				A202661B1B8109E40063342C /* AFRViewCell.swift */,
+				A202661C1B8109E40063342C /* AFRViewCell.xib */,
+				A202661F1B810FAF0063342C /* AFMenuCell.swift */,
+				A20266201B810FAF0063342C /* AFMenuCell.xib */,
+				A27FCB161B7A77F000024E80 /* MenuViewController.swift */,
+				A2D9C7291B60738B00E145C6 /* LoginViewController.swift */,
+				A2D11E841B7BD5570038AA65 /* DataManager.swift */,
+			);
+			name = "JavaRun Old";
+			sourceTree = "<group>";
+		};
+		A22D66811B8E28DA003C5DA7 /* JavaRun  */ = {
+			isa = PBXGroup;
+			children = (
+				A22D66831B8E296E003C5DA7 /* MainMenuViewController.swift */,
+			);
+			name = "JavaRun ";
+			sourceTree = "<group>";
+		};
+		A22D66821B8E290C003C5DA7 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				A2D11E821B7AB2C40038AA65 /* Bolts.framework */,
+				A2AF98851B7A8AA100BFC025 /* Parse.framework */,
+				A2AF98531B7A887C00BFC025 /* GoogleMaps */,
+				A2D5D13C1B62A38000A4346B /* MapKit.framework */,
+				A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */,
+				A2144ECD1B601FE6006ACDCF /* libz.dylib */,
+				A2AF981F1B7A871500BFC025 /* Parse.framework */,
+				A2144EB91B5F06F9006ACDCF /* Bolts.framework */,
+				A2144ECB1B601FDC006ACDCF /* SystemConfiguration.framework */,
+				A2144EC91B601FD2006ACDCF /* Security.framework */,
+				A2144EC71B601FC8006ACDCF /* QuartzCore.framework */,
+				A2144EC51B601FC2006ACDCF /* MobileCoreServices.framework */,
+				A2144EC31B601FBB006ACDCF /* CoreLocation.framework */,
+				A2144EC11B601FB0006ACDCF /* CoreGraphics.framework */,
+				A2144EBF1B601FA5006ACDCF /* CFNetwork.framework */,
+				A2144EBD1B5F09F3006ACDCF /* AudioToolbox.framework */,
+			);
+			name = FrameWorks;
 			sourceTree = "<group>";
 		};
 		A2AF98531B7A887C00BFC025 /* GoogleMaps */ = {
@@ -670,6 +697,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22D66841B8E296E003C5DA7 /* MainMenuViewController.swift in Sources */,
 				A25B505E1B62D28F00283F28 /* ActionView.swift in Sources */,
 				A20266211B810FAF0063342C /* AFMenuCell.swift in Sources */,
 				A2D9C72A1B60738B00E145C6 /* LoginViewController.swift in Sources */,
