@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 import GoogleMaps
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         GMSServices.provideAPIKey("AIzaSyBq1U0PrR40QN-ff92DU5AiBqzuyqmKpd0")
         // Override point for customization after application launch.
+
+        let navigationController = self.window?.rootViewController as! UINavigationController
+        let viewController = navigationController.topViewController as! MainMenuViewController
+
+        if let file = NSBundle(forClass:AppDelegate.self).pathForResource("JAVA", ofType: "json") {
+            let data = NSData(contentsOfFile: file)!
+            let json = JSON(data:data)
+            viewController.json = json
+        } else {
+            viewController.json = JSON.nullJSON
+        }
+
+
+        
+
+
+
         return true
     }
 

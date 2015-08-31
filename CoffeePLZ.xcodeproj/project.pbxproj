@@ -29,6 +29,10 @@
 		A2144ECE1B601FE6006ACDCF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECD1B601FE6006ACDCF /* libz.dylib */; };
 		A2144ED01B601FEF006ACDCF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2144ECF1B601FEF006ACDCF /* libsqlite3.dylib */; };
 		A22D66841B8E296E003C5DA7 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22D66831B8E296E003C5DA7 /* MainMenuViewController.swift */; };
+		A22D669F1B936FBA003C5DA7 /* JAVA.json in Resources */ = {isa = PBXBuildFile; fileRef = A22D669E1B936FBA003C5DA7 /* JAVA.json */; };
+		A22D66A11B938737003C5DA7 /* marker20.png in Resources */ = {isa = PBXBuildFile; fileRef = A22D66A01B938737003C5DA7 /* marker20.png */; };
+		A22D66A41B939484003C5DA7 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22D66A21B939484003C5DA7 /* CheckoutViewController.swift */; };
+		A22D66A51B939484003C5DA7 /* CheckoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A22D66A31B939484003C5DA7 /* CheckoutViewController.xib */; };
 		A25B505C1B62D15000283F28 /* ActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B505B1B62D15000283F28 /* ActionView.xib */; };
 		A25B505E1B62D28F00283F28 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B505D1B62D28F00283F28 /* ActionView.swift */; };
 		A26FDCBE1B8A52A800B76439 /* JavaMenu.json in Resources */ = {isa = PBXBuildFile; fileRef = A26FDCBD1B8A52A800B76439 /* JavaMenu.json */; };
@@ -123,6 +127,10 @@
 		A22B11B41B7A7A55003F6CEE /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		A22B11B51B7A7A55003F6CEE /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		A22D66831B8E296E003C5DA7 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		A22D669E1B936FBA003C5DA7 /* JAVA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = JAVA.json; path = ../../../../../Documents/JAVA.json; sourceTree = "<group>"; };
+		A22D66A01B938737003C5DA7 /* marker20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marker20.png; sourceTree = "<group>"; };
+		A22D66A21B939484003C5DA7 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		A22D66A31B939484003C5DA7 /* CheckoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckoutViewController.xib; sourceTree = "<group>"; };
 		A25B505B1B62D15000283F28 /* ActionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActionView.xib; path = ../ActionView.xib; sourceTree = "<group>"; };
 		A25B505D1B62D28F00283F28 /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		A26FDCBD1B8A52A800B76439 /* JavaMenu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = JavaMenu.json; path = ../../../../JavaMenu.json; sourceTree = "<group>"; };
@@ -295,6 +303,7 @@
 				A22D66811B8E28DA003C5DA7 /* JavaRun  */,
 				A2144E991B5EF06D006ACDCF /* AppDelegate.swift */,
 				A2144E9D1B5EF06D006ACDCF /* Main.storyboard */,
+				A22D669E1B936FBA003C5DA7 /* JAVA.json */,
 				A26FDCBD1B8A52A800B76439 /* JavaMenu.json */,
 				A22D667F1B8E28C5003C5DA7 /* JavaRun Old */,
 				A2144EA01B5EF06D006ACDCF /* Images.xcassets */,
@@ -360,6 +369,9 @@
 			isa = PBXGroup;
 			children = (
 				A22D66831B8E296E003C5DA7 /* MainMenuViewController.swift */,
+				A22D66A21B939484003C5DA7 /* CheckoutViewController.swift */,
+				A22D66A31B939484003C5DA7 /* CheckoutViewController.xib */,
+				A22D66A01B938737003C5DA7 /* marker20.png */,
 			);
 			name = "JavaRun ";
 			sourceTree = "<group>";
@@ -605,9 +617,11 @@
 				A2D11ED91B7EA20F0038AA65 /* Ubuntu-MI.ttf in Resources */,
 				A2D11ED01B7EA20F0038AA65 /* LICENCE.txt in Resources */,
 				A2D11ED81B7EA20F0038AA65 /* Ubuntu-M.ttf in Resources */,
+				A22D66A11B938737003C5DA7 /* marker20.png in Resources */,
 				A2BCA1911B648463005660E6 /* Map.xib in Resources */,
 				A25B505C1B62D15000283F28 /* ActionView.xib in Resources */,
 				A2D11ED11B7EA20F0038AA65 /* README.txt in Resources */,
+				A22D669F1B936FBA003C5DA7 /* JAVA.json in Resources */,
 				A2D11ED41B7EA20F0038AA65 /* Ubuntu-BI.ttf in Resources */,
 				A20266221B810FAF0063342C /* AFMenuCell.xib in Resources */,
 				A2D11ED21B7EA20F0038AA65 /* TRADEMARKS.txt in Resources */,
@@ -622,6 +636,7 @@
 				A202661E1B8109E40063342C /* AFRViewCell.xib in Resources */,
 				A2D11E911B7E49560038AA65 /* kimonoData.json in Resources */,
 				A2D11ED51B7EA20F0038AA65 /* Ubuntu-C.ttf in Resources */,
+				A22D66A51B939484003C5DA7 /* CheckoutViewController.xib in Resources */,
 				A26FDCBE1B8A52A800B76439 /* JavaMenu.json in Resources */,
 				A2144E9F1B5EF06D006ACDCF /* Main.storyboard in Resources */,
 				A2144EA41B5EF06D006ACDCF /* LaunchScreen.xib in Resources */,
@@ -701,6 +716,7 @@
 				A25B505E1B62D28F00283F28 /* ActionView.swift in Sources */,
 				A20266211B810FAF0063342C /* AFMenuCell.swift in Sources */,
 				A2D9C72A1B60738B00E145C6 /* LoginViewController.swift in Sources */,
+				A22D66A41B939484003C5DA7 /* CheckoutViewController.swift in Sources */,
 				A2D11EB31B7E9EF60038AA65 /* UIViewControllerExtension.swift in Sources */,
 				A2144E9C1B5EF06D006ACDCF /* RootViewController.swift in Sources */,
 				A2D11E961B7E4F210038AA65 /* DHCollectionTableViewCell.swift in Sources */,

@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="207.5" y="475.5"/>
+            <point key="canvasLocation" x="727.5" y="264.5"/>
         </scene>
         <!--Get Coffee View Controller-->
         <scene sceneID="Hlx-0p-dSp">
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKh-8K-rKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1014.5" y="2313.5"/>
+            <point key="canvasLocation" x="2592.5" y="982.5"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="Tsy-bF-V3F">
@@ -174,7 +174,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0i-Yg-MRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448.5" y="1399.5"/>
+            <point key="canvasLocation" x="1894" y="949"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="xug-OT-VwQ">
@@ -198,6 +198,9 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ogV-La-Y5i" id="fMi-Tq-U3Z">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="v1x-mj-jep" kind="show" identifier="hello" id="Xod-0F-he8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -215,10 +218,40 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7fm-kb-fOO"/>
+                    <connections>
+                        <outlet property="tableView" destination="El3-pr-bhZ" id="do5-BY-Knf"/>
+                        <segue destination="o6G-nI-hO2" kind="show" identifier="drinkBeers" id="oyb-GX-aIG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3N-Z7-6cq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2785" y="220"/>
+            <point key="canvasLocation" x="3131" y="203"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lky-n9-dh7">
+            <objects>
+                <viewController id="o6G-nI-hO2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l6m-7f-Vqu"/>
+                        <viewControllerLayoutGuide type="bottom" id="kQ2-dG-eca"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CgO-r7-vnQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frf-uG-UKo">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="STc-ua-pwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3896" y="198"/>
         </scene>
         <!--Second Collection View Controller-->
         <scene sceneID="G69-Hb-fLe">
@@ -255,7 +288,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFH-eu-gkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3494" y="233"/>
+            <point key="canvasLocation" x="4516" y="187"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wUj-eq-Xc4">
