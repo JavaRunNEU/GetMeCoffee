@@ -16,7 +16,7 @@ class MainMenuViewController: UIViewController,UITableViewDelegate,UITableViewDa
     var json: JSON = JSON.nullJSON
 
     override func viewWillAppear(animated: Bool) {
-        addNavBarButton()
+//        addNavBarButton()
     }
     override func viewDidLoad()
     {
@@ -29,23 +29,23 @@ class MainMenuViewController: UIViewController,UITableViewDelegate,UITableViewDa
 
     //MARK: - Helper methods
 
-    func addNavBarButton()
-    {
-        //    var backBtn = UIButton(buttonWithType:UIButtonTypeCustom)
-        var backBtn = UIButton()
-        let backBtnImage = UIImage(named: "marker20")
-        backBtn.setBackgroundImage(backBtnImage, forState: UIControlState.Normal)
-
-
-        var select = Selector(goToCheckout())
-        backBtn.addTarget(nil, action: select, forControlEvents: UIControlEvents.TouchUpInside)
-        backBtn.frame = CGRectMake(0, 0, 32, 32)
-        var backBtnView = UIView(frame: CGRectMake(0, 0, 32, 32))
-        backBtnView.bounds = CGRectOffset(backBtnView.bounds, 16, 0)
-        backBtnView.addSubview(backBtn)
-        var backButton = UIBarButtonItem(customView: backBtnView)
-        self.navigationItem.rightBarButtonItem = backButton
-    }
+//    func addNavBarButton()
+//    {
+//        //    var backBtn = UIButton(buttonWithType:UIButtonTypeCustom)
+//        var backBtn = UIButton()
+//        let backBtnImage = UIImage(named: "marker20")
+//        backBtn.setBackgroundImage(backBtnImage, forState: UIControlState.Normal)
+//
+//
+//        var select = Selector(goToCheckout())
+//        backBtn.addTarget(nil, action: select, forControlEvents: UIControlEvents.TouchUpInside)
+//        backBtn.frame = CGRectMake(0, 0, 32, 32)
+//        var backBtnView = UIView(frame: CGRectMake(0, 0, 32, 32))
+//        backBtnView.bounds = CGRectOffset(backBtnView.bounds, 16, 0)
+//        backBtnView.addSubview(backBtn)
+//        var backButton = UIBarButtonItem(customView: backBtnView)
+//        self.navigationItem.rightBarButtonItem = backButton
+//    }
 
 
 
@@ -56,7 +56,7 @@ class MainMenuViewController: UIViewController,UITableViewDelegate,UITableViewDa
         println("WTF")
 //        self.performSegueWithIdentifier("drinkBeers", sender: self)
         let CheckoutVC = CheckoutViewController()
-        
+
         self.navigationController?.pushViewController(CheckoutVC, animated: false)
 //        MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] init];
 //        [self.navigationController pushViewController:mainMenuViewController animated:NO];
